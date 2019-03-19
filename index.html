@@ -1,68 +1,115 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
-        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <title>Dockside Restaurant Wellington</title>
-        <link href="css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     
     <body>
         <div class="pageContainer">
-            <nav>
+            <div id="nav">
                 <div id="logo">
                         <img src="images/DOCKSIDE.png">
                 </div>
-                <ul> 
-                    <li><a href="" class="button glow-button"><u>home</u></a></li>
-                    <li><a href="" class="button glow-button">menu</a></li>
-                    <li><a href="" class="button glow-button">reservations</a></li>
-                </ul>
-            </nav>
+                <div class="list">
+                    <ul style="float:right;"> 
+                        <li><a href="" class="button glow-button"><u>home</u></a></li>
+                        <li><a href="" class="button glow-button">menu</a></li>
+                        <li><a href="" class="button glow-button">reservations</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="menuIcon" onclick="showNav()">
+                <i class="fas fa-bars" style="color: blue;"></i>
+            </div>
             
             <section>
-                
+               
                 <div class="row">
                     <div class="col col12 left">
-                        <img src="" style="width: 100%; height: 300px; background-color: red;">
+                        <img src="images/seafood.jpg" style="width: 100%; height: 500px; opacity: 0.9;">
                     </div>
+                    
+                    <div class="outter">
+                        <div class="inner">
+                            <div class="link">
+                                <h1>Make a reservation</h1>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 <div class="row">
-                    <div class="col pink col12 left" style="height:300px;"></div> 
+                    <div class="col col12 left" style="height:380px;">
+                        <p><b>Dockside Restaurant & Bar</b> is situated at the heart of Queens Wharf <br> and is on of Wellington's most diverse venues with the ability to cater every need.<br> Housed in a historic waterfront shed, it enjoys stunning views from every aspect with  maritime theme throughout. <br><br>
+                            
+                        Dockside offers a largely seafood bases menu focusing on the best of what New Zealand has to offer. <br> The menu changes daily with emphasis on the best, freshest produce and providing even <br> the most regular customers with new choices and the latest catch. 
+                        </p>
+                    </div> 
                 </div>
                 
                 <div class="row">
                     <div class="col col6 left">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.114122964712!2d174.7772997162179!3d-41.28462064822628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afd484192a2f%3A0x4c20899db07ffec3!2sDockside+Restaurant+%26+Bar!5e0!3m2!1sen!2snz!4v1552946974793" width="700" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.114122964712!2d174.7772997162179!3d-41.28462064822628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afd484192a2f%3A0x4c20899db07ffec3!2sDockside+Restaurant+%26+Bar!5e0!3m2!1sen!2snz!4v1552946974793" width="700" height="500" frameborder="0" style="border:0" allowfullscreen>
+                        </iframe>
                     </div>
-                    <div class="col hotPink col6 left" style="height:300px;"></div> 
-                </div>
-                
-                <div class="row">
-                    <div class="col col12 left">
-                        <img src="" style="width: 100%; height: 300px; background-color: red;">
+                    <div class="col grey col6 left" style="height:430px;">
+                        <div class="review">
+                            <h6>"Service at this restaurant was outstading <br> and the food was simply divine." - Local Guide </h6>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            
+                            <h6>"Beautiful place for dinner. <br> Absolutely delicious meals too." - Local Guide </h6>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                        </div>
                     </div> 
                 </div>
                 
-                <!--<div class="outter">
-                    <div class="inner">
-                        <div class="link">
-                            <h1>Make a Reservation</h1> 
+                <div class="row2">
+                    <div class="col col12 left">
+                        <img src="images/greenFood.jpg" style="width: 100%; height: 557px; position: relative; bottom: 4px;">
+                        
+                        <div class="bottomOutter">
+                            <div class="bottomInner">
+                                <div class="bottomLink">
+                                    <h2>Menu</h2>
+                                </div>
+                            </div>
                         </div>
+                     </div> 
+                    
+                    <div class="bottomImgText">
+                        <p>Our chef sources from the local seafood market <br> daily to ensure that we can provide the very <br> best New Zealand has to offer.</p>
                     </div>
-                </div>-->
-                </section>
+
+                </div>
+            
+            </section>
             
             <footer>
-                <h4> Dockside Restaurant and Bar © </h4>
+                <h3><b>Shed 3 Queens Wharf, Wellington | Open Monday - Sunday, 11am-10pm</b></h3>
+                <h4> Dockside Restaurant and Bar © 2019</h4>
+                <h5>(04) 499 9900</h5>
             </footer>
             
             </div>
+        
+        <script src="js/script.js" type="text/javascript"></script>
     </body>
 </html>
-
 
 
 
